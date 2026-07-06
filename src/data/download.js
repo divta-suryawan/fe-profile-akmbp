@@ -1,0 +1,58 @@
+export const downloadData = [
+  {
+    id: 1,
+    title: 'Formulir Pendaftaran Mahasiswa Baru 2026',
+    category: 'PMB',
+    size: '245 KB',
+    type: 'PDF',
+  },
+  {
+    id: 2,
+    title: 'Pedoman Akademik Tahun 2026/2027',
+    category: 'Akademik',
+    size: '1.2 MB',
+    type: 'PDF',
+  },
+  {
+    id: 3,
+    title: 'Kalender Akademik 2026/2027',
+    category: 'Akademik',
+    size: '890 KB',
+    type: 'PDF',
+  },
+  {
+    id: 4,
+    title: 'Panduan Penyusunan Tugas Akhir',
+    category: 'Akademik',
+    size: '1.5 MB',
+    type: 'PDF',
+  },
+  {
+    id: 5,
+    title: 'Format Surat Keterangan Aktif Kuliah',
+    category: 'Administrasi',
+    size: '120 KB',
+    type: 'DOCX',
+  },
+  {
+    id: 6,
+    title: 'Profil Akademi Kebidanan Mega Buana',
+    category: 'Profil',
+    size: '3.2 MB',
+    type: 'PDF',
+  },
+  {
+    id: 7,
+    title: 'Surat Keterangan Pendamping Ijazah (SKPI)',
+    category: 'Administrasi',
+    size: '340 KB',
+    type: 'PDF',
+  },
+  {
+    id: 8,
+    title: 'Formulir Pengajuan Judul Penelitian',
+    category: 'Akademik',
+    size: '180 KB',
+    type: 'DOCX',
+  },
+]

@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomePage from '../pages/HomePage.vue'
+import AdminLayout from '../cms/components/AdminLayout.vue'
 
 const routes = [
   {
@@ -96,6 +97,22 @@ const routes = [
     path: '/kemahasiswaan',
     name: 'kemahasiswaan',
     component: () => import('../pages/AkademikKemahasiswaan.vue'),
+  },
+  {
+    path: '/admin',
+    component: AdminLayout,
+    children: [
+      {
+        path: '',
+        name: 'admin-dashboard',
+        component: () => import('../cms/pages/DashboardPage.vue'),
+      },
+      {
+        path: 'berita',
+        name: 'admin-berita',
+        component: () => import('../cms/pages/BeritaPage.vue'),
+      },
+    ],
   },
 ]
 

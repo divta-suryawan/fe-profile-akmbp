@@ -1,6 +1,6 @@
 <script setup>
 import { computed } from 'vue'
-import { FileText, Calendar, Download, Image, TrendingUp, Clock, ArrowUpRight } from 'lucide-vue-next'
+import { FileText, Calendar, Download, Image, BookOpen, TrendingUp, Clock, ArrowUpRight } from 'lucide-vue-next'
 import { dashboardStats } from '../data/dummyData'
 
 const stats = computed(() => [
@@ -8,6 +8,7 @@ const stats = computed(() => [
   { label: 'Total Agenda', value: dashboardStats.totalAgenda, icon: Calendar, color: 'bg-green-500', trend: '+8%' },
   { label: 'Total Fasilitas', value: dashboardStats.totalFasilitas, icon: Download, color: 'bg-purple-500', trend: '+5%' },
   { label: 'Total Galeri', value: dashboardStats.totalGaleri, icon: Image, color: 'bg-amber-500', trend: '+20%' },
+  { label: 'Program Studi', value: dashboardStats.totalProgramStudi, icon: BookOpen, color: 'bg-indigo-500', trend: '+0%' },
 ])
 </script>
 
@@ -18,7 +19,7 @@ const stats = computed(() => [
       <p class="text-gray-500 text-sm mt-1">Selamat datang di panel administrasi AKBID Mega Buana Palu</p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mb-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5 mb-8">
       <div
         v-for="stat in stats"
         :key="stat.label"
@@ -96,6 +97,13 @@ const stats = computed(() => [
           >
             <Image class="w-6 h-6 text-medblue mx-auto mb-2" />
             <p class="text-sm font-medium text-gray-700">Kelola Galeri</p>
+          </router-link>
+          <router-link
+            to="/admin/program-studi"
+            class="p-4 rounded-lg border border-gray-200 hover:border-gold/50 hover:bg-gold/5 transition-all text-center"
+          >
+            <BookOpen class="w-6 h-6 text-medblue mx-auto mb-2" />
+            <p class="text-sm font-medium text-gray-700">Program Studi</p>
           </router-link>
         </div>
       </div>

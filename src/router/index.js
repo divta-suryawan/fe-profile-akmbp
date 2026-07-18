@@ -24,9 +24,9 @@ const routes = [
     component: () => import('../pages/ProfileVisiMisi.vue'),
   },
   {
-    path: '/dosen',
-    name: 'dosen',
-    component: () => import('../pages/ProfileDosen.vue'),
+    path: '/pegawai',
+    name: 'pegawai',
+    component: () => import('../pages/ProfilePegawai.vue'),
   },
   {
     path: '/berita',
@@ -111,6 +111,21 @@ const routes = [
         path: 'berita',
         name: 'admin-berita',
         component: () => import('../cms/pages/BeritaPage.vue'),
+      },
+      {
+        path: 'program-studi',
+        name: 'admin-program-studi',
+        component: () => import('../cms/pages/ProgramStudiPage.vue'),
+      },
+      {
+        path: 'pegawai',
+        name: 'admin-pegawai',
+        component: () => import('../cms/pages/PegawaiPage.vue'),
+      },
+      {
+        path: 'profil',
+        name: 'admin-profil',
+        component: () => import('../cms/pages/HalamanPage.vue'),
       },
     ],
   },

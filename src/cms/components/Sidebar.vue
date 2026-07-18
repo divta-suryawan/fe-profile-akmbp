@@ -1,12 +1,15 @@
 <script setup>
 import { useRoute } from 'vue-router'
-import { LayoutDashboard, FileText, Calendar, Download, Image, LogOut } from 'lucide-vue-next'
+import { LayoutDashboard, FileText, Calendar, Download, Image, BookOpen, User, Users, LogOut } from 'lucide-vue-next'
 
 const route = useRoute()
 
 const menuItems = [
   { label: 'Dashboard', icon: LayoutDashboard, path: '/admin' },
   { label: 'Berita', icon: FileText, path: '/admin/berita' },
+  { label: 'Program Studi', icon: BookOpen, path: '/admin/program-studi' },
+  { label: 'Pegawai', icon: Users, path: '/admin/pegawai' },
+  { label: 'Profil', icon: User, path: '/admin/profil' },
   { label: 'Agenda', icon: Calendar, path: '/admin/agenda' },
   { label: 'Download', icon: Download, path: '/admin/download' },
   { label: 'Galeri', icon: Image, path: '/admin/galeri' },

@@ -9,6 +9,8 @@ const route = useRoute()
 const pageTitles = {
   '/admin': 'Dashboard',
   '/admin/berita': 'Kelola Berita',
+  '/admin/program-studi': 'Kelola Program Studi',
+  '/admin/pegawai': 'Kelola Pegawai',
 }
 </script>
 

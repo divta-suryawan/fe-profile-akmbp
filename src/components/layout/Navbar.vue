@@ -31,7 +31,20 @@ const navItems = [
       { label: 'Sambutan Direktur', to: '/sambutan-direktur' },
       { label: 'Sejarah', to: '/sejarah' },
       { label: 'Visi dan Misi', to: '/visi-misi' },
-      { label: 'Dosen', to: '/dosen' },
+      { label: 'Pegawai', to: '/pegawai' },
+    ],
+  },
+  {
+    label: 'Akademik',
+    to: '#',
+    children: [
+      { label: 'Program Studi', to: '/program-studi' },
+      { label: 'Tracer Study', to: '/tracer-study' },
+      { label: 'Penelitian', to: '/penelitian' },
+      { label: 'Pengabdian', to: '/pengabdian' },
+      { label: 'LPM', to: '/lpm' },
+      { label: 'LPPM', to: '/lppm' },
+      { label: 'Kemahasiswaan', to: '/kemahasiswaan' },
     ],
   },
   {
@@ -49,19 +62,6 @@ const navItems = [
     label: 'Fasilitas',
     to: '/fasilitas',
     children: [],
-  },
-  {
-    label: 'Akademik',
-    to: '#',
-    children: [
-      { label: 'Program Studi', to: '/program-studi' },
-      { label: 'Tracer Study', to: '/tracer-study' },
-      { label: 'Penelitian', to: '/penelitian' },
-      { label: 'Pengabdian', to: '/pengabdian' },
-      { label: 'LPM', to: '/lpm' },
-      { label: 'LPPM', to: '/lppm' },
-      { label: 'Kemahasiswaan', to: '/kemahasiswaan' },
-    ],
   },
 ]
 

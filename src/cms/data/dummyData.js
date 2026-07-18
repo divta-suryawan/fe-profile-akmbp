@@ -55,15 +55,68 @@ export const dummyBerita = [
   },
 ]
 
+export const dummyProgramStudi = [
+  {
+    id: 1,
+    slug: 'd3-kebidanan',
+    nama: 'D3 Kebidanan',
+    jenjang: 'D3',
+    akreditasi: 'B',
+    deskripsi: 'Program studi D3 Kebidanan merupakan program pendidikan vokasi yang mempersiapkan tenaga ahli bidan yang kompeten dan profesional.',
+    urutan: 1,
+    is_active: true,
+    created_at: '2026-07-17T01:27:13Z',
+    updated_at: '2026-07-17T01:27:13Z',
+  },
+  {
+    id: 2,
+    slug: 'd4-fisioterapi',
+    nama: 'D4 Fisioterapi',
+    jenjang: 'D4',
+    akreditasi: 'Baik',
+    deskripsi: 'Program studi D4 Fisioterapi menyiapkan tenaga profesional di bidang fisioterapi yang mampu bekerja di berbagai fasilitas kesehatan.',
+    urutan: 2,
+    is_active: true,
+    created_at: '2026-07-17T01:27:13Z',
+    updated_at: '2026-07-17T01:27:13Z',
+  },
+  {
+    id: 3,
+    slug: 's1-kebidanan',
+    nama: 'S1 Kebidanan',
+    jenjang: 'S1',
+    akreditasi: 'C',
+    deskripsi: 'Program studi S1 Kebidanan merupakan program akademik yang menghasilkan bidan pendidik dan peneliti di bidang kebidanan.',
+    urutan: 3,
+    is_active: false,
+    created_at: '2026-07-17T01:27:13Z',
+    updated_at: '2026-07-17T01:27:13Z',
+  },
+  {
+    id: 4,
+    slug: 'profesi-bidan',
+    nama: 'Profesi Bidan',
+    jenjang: 'Profesi',
+    akreditasi: 'A',
+    deskripsi: 'Program profesi bidan merupakan pendidikan lanjutan bagi lulusan D3 Kebidanan untuk memperoleh gelar Bidan.',
+    urutan: 4,
+    is_active: true,
+    created_at: '2026-07-17T01:27:13Z',
+    updated_at: '2026-07-17T01:27:13Z',
+  },
+]
+
 export const dashboardStats = {
   totalBerita: 24,
   totalAgenda: 12,
   totalFasilitas: 8,
   totalGaleri: 45,
+  totalProgramStudi: 4,
   recentActivities: [
     { action: 'Menambahkan berita baru', item: 'Seminar Kesehatan...', time: '2 jam yang lalu' },
     { action: 'Mengupdate agenda', item: 'Workshop Metodologi...', time: '5 jam yang lalu' },
     { action: 'Menghapus galeri', item: 'Foto Wisuda 2024', time: '1 hari yang lalu' },
     { action: 'Menerbitkan berita', item: 'Pendaftaran Mahasiswa...', time: '2 hari yang lalu' },
+    { action: 'Menambah program studi', item: 'Profesi Bidan', time: '3 hari yang lalu' },
   ],
 }
